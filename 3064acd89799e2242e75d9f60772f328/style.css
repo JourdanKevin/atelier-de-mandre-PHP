@@ -1,0 +1,23 @@
+.connexion {
+    position: absolute;
+    background-color: #7a7a7a;
+    color : white;
+    /* float: right; */
+    border: 5px;
+    background-color: #7a7a7a;
+    border-radius: 100px;
+    margin-right: 0.5%;
+    padding: 0.5%;
+    margin-top: 0.3%;
+    font-size: 16px;
+    cursor: pointer;
+    right: 0px;
+    top: 0px;
+}
+
+.connexion:hover {
+    text-decoration:none;
+    transition: 0.5s;
+    background-color: #494949;
+    color: #c7c7c7;
+}
