@@ -28,4 +28,9 @@
         $req = queryPrepAmont($db,$request,$data);
         return $req->fetch(PDO::FETCH_ASSOC);
     }
+
+    function query($db,$request){
+        $req = $db->query($request);
+        return $req->fetchAll(PDO::FETCH_ASSOC);
+    }
 ?>

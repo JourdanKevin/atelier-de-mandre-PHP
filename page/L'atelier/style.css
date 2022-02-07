@@ -1,116 +1,70 @@
-body{
-    margin: 0px;
-    padding: 0px;
+.haut{
+  height: 80px;
+  /* padding-left: 10px; */
+  padding-bottom: 83px;
+  width: 90% !important;
+}
+.vertal{
+  line-height: 80px;
+  margin-top: 0px !important;
+  font-size: 45px !important;
+}
+.decalHaut{
+  margin-top: 18px !important;
+  margin-left: 15px;
+  text-align: justify;
 }
 
-.flex{
-    display: flex;    
+.titreGras{
+  font-weight: bold;
+}
+
+.alginLeft{
+  text-align: justify !important;
+  margin-left: 100px;
+  width: 88%;
 }
 
 .block{
-    display: block;
-    width: 20%;
+  display: block;
+}
+.tailleImage{
+  height: 202.8px;
+  width: 153.6px;
+}
+
+h1{
+  font-size: 30px !important;
+  margin-bottom: 23px;
+}
+.police{
+  font-family: 'Goudy Old Style';
+  font-size: 30px;  
+  margin-top: -14px;
+}
+
+p{
+  margin-bottom: 46px;
+  line-height: 37px;
+}
+
+
+.FirstLetter{
+  font-size: 50px;
+}
+/* Goudy Old Style  */
+/* Batang */
+
+.FirstLetteTitle{
+  font-size: 60px !important;
+} 
+
+.tittle{
+  margin-bottom: 5%;
+  text-align: center !important;
+  margin-left: 84px;
 }
 
 .center{
-  text-align: center;
+  text-align: center !important;
 }
-
-.objDec{
-    width: 90%;
-}
-
-.tittle{
-	background-color: #d7d2cc;
-}
-
-.Popup{
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-  
-.imgPopup{
-    padding: 20px;
-    background-clip: content-box; /* <---- */
-    box-shadow: inset 0 0 0 20px black; /* <-- 10px spread radius */
-}
-.formContent {
-align-items: center;
-text-align: center;
-flex-direction: column; 
-justify-content: center;
-width: 100%;
-min-height: 100%;
-padding: 20px;
-position: fixed; 
-}
-.listeImg{
-    padding:1px;
-}
-.animate {
-    animation: zoom 0.4s
-}
-
-@keyframes zoom {
-    from {
-        transform: scale(0)
-    }
-    to {
-        transform: scale(1)
-    }
-}
-.photo {
-    float:left;
-    border: 0px;
-    margin: 0px 1px 1px 0px;
-    cursor: pointer;
-    width: 11.05%;
-}
-
-.vertical-menu {
-    width: 200px; /* Set a width if you like */
-  }
-  
-  .vertical-menu a {
-    background-color: #f8f9fa !important;
-    color: black; /* Black text color */
-    display: block; /* Make the links appear below each other */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove underline from links */
-  }
-  
-  .vertical-menu a:hover {
-    background-color: #ccc; /* Dark grey background on mouse-over */
-  }
-  
-  .vertical-menu a.active {
-    background-color: #04AA6D; /* Add a green color to the "active/current" link */
-    color: white;
-  }
-
-
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-
-  ::-webkit-scrollbar-track {
-    background: #eee8e1; 
-  }
-   
- 
-  ::-webkit-scrollbar-thumb {
-    background: #d7d2cc ; 
-  }
-  
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }

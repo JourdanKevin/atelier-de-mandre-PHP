@@ -3,7 +3,7 @@ class ConstructPage {
     
     private $current = "";
 
-    function __construct($current = "", $notdoctype = true, $colorBody = "",$title = "document") {
+    function __construct($current = "", $notdoctype = true,$title = "document") {
         $this->current = $current;
         if ($notdoctype) 
             echo ('<link href="'.$current.'commun/prebuild/boots/bootstrap.css" rel="stylesheet">');
@@ -15,8 +15,7 @@ class ConstructPage {
             echo '    <meta charset="UTF-8">';
             echo '    <meta name="viewport" content="width=device-width, initial-scale=1.0">';
             echo '<link href="'.$current.'commun/prebuild/boots/bootstrap.css" rel="stylesheet">';
-            if($colorBody == "dark")
-                echo '<link href="'.$current.'commun/prebuild/boots/styleMaj.css" rel="stylesheet">';
+            echo '<link href="'.$current.'commun/prebuild/boots/styleMaj.css" rel="stylesheet">';
             echo '    <script src="'.$current.'commun/function/js/jquery.min.js"></script>';
             echo '</head>';
             echo '<body>';
@@ -36,7 +35,7 @@ class ConstructPage {
                     $val = "";
                 }
                echo ('<li class="nav-item '.$active.'">');
-                echo ('<a class="nav-link" href="'.$val.'">'.$item.'</a>');
+                echo ('<a class="nav-link tipo" href="'.$val.'">'.$item.'</a>');
                echo ('</li>');
                
             }
@@ -48,15 +47,19 @@ class ConstructPage {
     }
     function createVerticalMenu($tMenu,$width = "100%"){
         ?>
-        <div class="vertical-menu">
+        <nav>
+        <div class="">
+            <ul class="ulVertMenue">
             <?php
             foreach ($tMenu as $item => $val){
                 $active = "";
                 if ($val == "current"){
-                    $active = "active";
+                    $active = "active-vert";
                     $val = "";
                 }
-                echo ('<a width="100%" class="nav-link" href="'.$val.'">'.$item.'</a>');
+                echo ('<li class="nav-item-vert '.$active.'">');
+                    echo ('<a class="nav-link-vert vertAlignA" href="'.$val.'">'.$item.'</a>');
+                echo ('</li>');
                
             }
             ?>
