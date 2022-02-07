@@ -1,9 +1,9 @@
 
 <?php
-    define('DSN','mysql:host=localhost; dbname=AtelierDeMandres'); // la localisation de notre bdd et 
+    define('DSN','mysql:host=localhost; dbname=Mandre'); // la localisation de notre bdd et 
     //le nom de la base de donnée que l'on veut se connecter
     define('USER','root'); // nom d'utilisateur pour ce connecter
-    define('MDP',''); // le mot de passe
+    define('MDP','12fb13a3'); // le mot de passe
     // on met ces 3 donnée dans des constante pour les utiliser dans la fonction qui suit
 
     try{ // Gestion des erreurs de connexion
