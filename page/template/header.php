@@ -7,7 +7,7 @@
                     "Les Styles" => "../LesStyles/",
                     "Sculptures et Moulages" => "../SculptureEtMoulage/",
                     "Luminaires" => "../Luminaires/",
-                    "Objets et Décors" => "../ObjetsEtDecors/",
+                    "Objets et Décors" => "../ObjetsEtdecors/",
                     "Projets" => "../Projets",
                     "Contact" => "../Contact/"
                 );
