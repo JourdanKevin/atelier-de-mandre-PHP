@@ -3,72 +3,38 @@ class ConstructPage {
     
     private $current = "";
 
-    function __construct($current = "", $notdoctype = true,$title = "document") {
+    function __construct($current = "", $doctype = true,$title = "document") {
         $this->current = $current;
-        if ($notdoctype) 
-            echo ('<link href="'.$current.'commun/prebuild/boots/bootstrap.css" rel="stylesheet">');
-       else{
-            echo '<!DOCTYPE html>';
-            echo '<html lang="fr">';
-            echo '<head>';
-            echo '<title>'.$title.'</title>';
-            echo '    <meta charset="UTF-8">';
-            echo '    <meta name="viewport" content="width=device-width, initial-scale=1.0">';
-            echo '<link href="'.$current.'commun/prebuild/boots/bootstrap.css" rel="stylesheet">';
-            echo '<link href="'.$current.'commun/prebuild/boots/styleMaj.css" rel="stylesheet">';
-            echo '    <script src="'.$current.'commun/function/js/jquery.min.js"></script>';
-            echo '</head>';
-            echo '<body>';
-        }
+        if ($doctype){ ?>
+            <!DOCTYPE html>
+                <html lang="fr">
+                    <head>
+                        <title><?php echo $title ?></title>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <?php }
     }
 
-    function createMenu($tMenu,$theme = "dark") {
-        echo ('<nav class="navbar navbar-expand-lg navbar-'.$theme.' bg-'.$theme.'">');
-        ?>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+    function createMenu($tMenu) { ?>
+        <nav>
+            <ul>
             <?php
             foreach ($tMenu as $item => $val){
                 $active = "";
                 if ($val == "current"){
                     $active = "active";
                     $val = "";
-                }
-               echo ('<li class="nav-item '.$active.'">');
-                echo ('<a class="nav-link tipo" href="'.$val.'">'.$item.'</a>');
-               echo ('</li>');
-               
-            }
-            ?>
+                } ?>
+                <li class=<?php echo $active ?>>
+                    <a href=<?php echo $val ?>><?php echo $item ?></a>
+                </li>
+            
+            <?php } ?>
             </ul>
-        </div>      
         </nav>
     <?php
     }
-    function createVerticalMenu($tMenu,$width = "100%"){
-        ?>
-        <nav>
-        <div class="">
-            <ul class="ulVertMenue">
-            <?php
-            foreach ($tMenu as $item => $val){
-                $active = "";
-                if ($val == "current"){
-                    $active = "active-vert";
-                    $val = "";
-                }
-                echo ('<li class="nav-item-vert '.$active.'">');
-                    echo ('<a class="nav-link-vert vertAlignA" href="'.$val.'">'.$item.'</a>');
-                echo ('</li>');
-               
-            }
-            ?>
-            </ul>
-        </div>      
-        </nav>
-    <?php
-    }
-
     function createIdentification($popup = false, $namediv = "login", $noAnimation = false){
         $folder = "commun/preBuild/view/identificationBuild/";        
         echo '<link href="'.$this->current.$folder.'css/style.css" rel="stylesheet">';
