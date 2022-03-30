@@ -15,13 +15,22 @@
         <div>
             <div id="idPopup" class="Popup">
                 <div class="animate formContent">
-                    <img id="idImgPopup"  class="imgPopup" src="" alt="">
+                    <div class="divImgPopup">
+                        <img id="idImgPopup"  class="imgPopup" src="" alt="">
+                    </div>
+                    <div class = "buttonP">
+                        <button id="prev"><</button>
+                        <button onclick="Close()">fermer</button>
+                        <button id="next">></button>
+                    </div>
+                    
                 </div>    
             </div>
             <table class="listeImg">
                 <?php
                     $compteur = 1;
-                    foreach ($images as $image){
+                    foreach ($images as $index => $image){
+                        // echo $index;
                         $url = '../../'.$image["folder"];
                         $borderRight = "borderRight";
                         if ($compteur%7 == 0){
@@ -35,7 +44,7 @@
                         }
                 ?>
                 <td class="articles  <?php echo $borderRight ?>">
-                    <img src="<?php echo $url.$image["nomFichier"]?>" class="photo" onclick=showPopup(<?php echo "'".$url.$image["nomFichierAssoc"]."'" ?>)>
+                    <img src="<?php echo $url.$image["nomFichier"]?>" class="photo" onclick=showPopup(<?php echo "'".$index."'" ?>)>
                 </td>
                 <?php
                         $compteur++;            

@@ -39,6 +39,7 @@
                         "Réparations et Restaurations" => ""
                       );
   include '../template/header.php';
+  ?><script>setArrayImg(<?php echo json_encode  ($images) ?>)</script> <?php
   $tMenue = array_replace($tMenue,array("Sculptures et Moulages" => "current")) ;
   include './vue.php';
   include '../template/footer.php';
