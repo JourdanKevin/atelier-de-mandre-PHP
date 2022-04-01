@@ -24,7 +24,7 @@
   <header>
     <div class="flex center">
       <div class="img">
-        <img class="ban" src="../../img/personal5.jpg"alt="">
+        <img class="ban" src="../../img/personal5.jpg" alt="">
       </div>
       <div class="writte">
         <p class="colorCol">collection</p> 
