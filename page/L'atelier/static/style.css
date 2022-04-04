@@ -16,7 +16,7 @@ h1{
   margin-bottom: 5%;
 }
 .title h1{
-  font-size: 2.38vw;
+  font-size: 1.8vw;
   background-color: #D7D2CC;
   width: 90%;
   margin: auto;
@@ -24,7 +24,7 @@ h1{
   font-weight: normal
 }
 .title span{
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 
 .divImage {
@@ -32,6 +32,22 @@ h1{
   display: table-cell;
   vertical-align: middle;
 }
+.logoAtelier{
+  vertical-align: auto;
+  display: table-cell;
+  margin: auto;
+  justify-content: end;
+  /* margin-top: auto; */
+}
+.video{
+  display: block;
+  text-align: center;
+  margin-top: 10%;
+}
+
+/* .margeLeft p{
+  margin-right: 10%;
+} */
 .divImage img  {
   width: 100%;
   margin: auto;

@@ -24,13 +24,19 @@
   <header>
     <div class="flex center">
       <div class="img">
-        <img class="ban" src="../../img/personal5.jpg" alt="">
+        <img class="ban" src="../../img/personal5.jpg" alt="">        
       </div>
       <div class="writte">
         <p class="colorCol">collection</p> 
         <p class="Catalogue2022">Catalogue <?php echo date("Y") ?></p>
       </div>
       <div class="lien">
+        <a href="../../img/Reportage Atelier de Mandres - La Rue.mp4" target="_blank">
+          <span class="fa-stack fa-lg">
+            <i class="far fa-circle fa-stack-2x"></i>
+            <i class="fas fa-video fa-stack-1x"></i>
+          </span> 
+        </a>
         <a href="https://www.linkedin.com/in/pierre-wagner-432894b2/" target="_blank">
           <span class="fa-stack fa-lg">
             <i class="far fa-circle fa-stack-2x"></i>

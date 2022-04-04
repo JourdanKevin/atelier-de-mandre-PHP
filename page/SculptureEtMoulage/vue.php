@@ -2,7 +2,7 @@
 </header>
 <div class="flex">
     <div class="block divCompVertMenu">
-        <img width="100%" src="../../img/logo-sema.jpg" alt=" img not found">
+        <img width="100%" src="../../img/logo-sema.svg" alt=" img not found">
         <p>Sculptures et Moulages : </p>
         <div class="divVertMenu">      
             <?php $ConstructPage->createMenu($verticalMenue);?>
@@ -14,15 +14,16 @@
         </div>
         <div>
             <div id="idPopup" class="Popup">
+                <div class = "buttonP">                        
+                    <i class="fa-solid fa-x" onclick="Close()"></i>                     
+                </div>
                 <div class="animate formContent">
+                <i id="prev" class="fa fa-angle-left"></i>
                     <div class="divImgPopup">
                         <img id="idImgPopup"  class="imgPopup" src="" alt="">
                     </div>
-                    <div class = "buttonP">
-                        <button id="prev"><</button>
-                        <button onclick="Close()">fermer</button>
-                        <button id="next">></button>
-                    </div>
+                <i id="next" class="fa fa-angle-right"></i>
+                  
                     
                 </div>    
             </div>

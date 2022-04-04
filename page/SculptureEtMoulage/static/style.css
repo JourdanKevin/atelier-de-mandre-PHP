@@ -22,18 +22,17 @@
     background-clip: content-box; /* <---- */
     box-shadow: inset 0 0 0 20px black;
     width: 100%;
+    margin: auto;
   }
   .formContent {
   display: flex;
   align-items: center;
   text-align: center;
-  flex-direction: column; 
   justify-content: center;
   width: 90%;
   height: auto;
   padding: 1px;
   margin: auto;
-  /* overflow: hidden; */
   }
 
   .animate {
@@ -73,6 +72,25 @@
 
   }
   .buttonP{
-    flex-grow: 1;
-    margin-top: auto;
+    text-align: right;
   }
+
+.Popup i{
+  font-size: 2vw;
+  color: rgb(211, 211, 211);
+  cursor: pointer;
+}
+
+.Popup button{
+  background-color: black;
+}
+
+#next{
+  float: right;
+  justify-content: end;
+  margin: auto;
+}
+#prev{
+  float: left;
+  margin: auto;
+}
