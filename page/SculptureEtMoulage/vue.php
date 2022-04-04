@@ -22,8 +22,7 @@
                     <div class="divImgPopup">
                         <img id="idImgPopup"  class="imgPopup" src="" alt="">
                     </div>
-                <i id="next" class="fa fa-angle-right"></i>
-                  
+                <i id="next" class="fa fa-angle-right"></i>                
                     
                 </div>    
             </div>

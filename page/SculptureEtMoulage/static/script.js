@@ -14,7 +14,7 @@ function changeImage(index){
 }
 function showPopup(index){
     changeImage(index)
-    document.getElementById("idPopup").style.display = "block";
+    document.getElementById("idPopup").style.display = "flex";
 }
 
 function Close(){
