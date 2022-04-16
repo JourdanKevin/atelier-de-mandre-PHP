@@ -13,7 +13,7 @@
         include "view/frontend/menu.php";        
         switch ($firsturl =  is_array($url) ? $url[0] : "") {
             case 'SculpturesEtMoulages':
-                $style = "sculptureEtMoulage/main.css";
+                $style = "/sculptureEtMoulage/main.css";
                 include "controller/sculptureEtMoulage.php";
                 break;     
             case "L'atelier":
@@ -23,8 +23,7 @@
             default:
                 include "controller/accueil.php";
                 break;
-        }
-       
+        }       
         include "view/frontend/basePage.php";
     }else{
         echo "erreur 404 : vous vous êtes perdus?";
