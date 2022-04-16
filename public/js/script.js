@@ -3,7 +3,7 @@ var lImages = []
 function changeImage(index){
     index = index < 0 ? lImages.length -1 : index > lImages.length -1 ? 0 : index
     document.getElementById("writteIndex").textContent = parseInt(index) + parseInt(1);
-    document.getElementById("idImgPopup").src = "../../" + lImages[index]["folder"] + lImages[index]["nomFichierAssoc"] ;
+    document.getElementById("idImgPopup").src = "/public/" + lImages[index]["folder"] + lImages[index]["nomFichierAssoc"] ;
     document.getElementById("prev").onclick = function () {changeImage(parseInt(index) - 1)}
     document.getElementById("next").onclick = function() {changeImage(parseInt(index) + 1)}
 }
