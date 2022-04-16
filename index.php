@@ -1,6 +1,5 @@
 <?php
     $url = isset($_GET["url"]) ? explode("/",$_GET["url"]) : false;
-    var_dump($url);
     include "data/data.php";    
     $data = new Datas();    
     $tMenu =  $data->get_header_menue($url ? $url[0] : false);
