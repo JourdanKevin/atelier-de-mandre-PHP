@@ -1,5 +1,6 @@
 <?php
     $vMenu =  $data->get_vertical_menue_scultptureEtMoulage($secondurl =  count($url) > 1 ? $url[1] : false); 
+    var_dump($secondurl);
     $vTitle = "Sculptures et Moulages : ";
     if ($secondurl) {
         include "model/sculptureEtMoulage.php";
