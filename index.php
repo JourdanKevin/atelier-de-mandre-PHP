@@ -6,14 +6,14 @@
     $tMenu =  $data->get_header_menue($url ? $url[0] : false);
     if ($tMenu) {
         $title = "L'Atelier de Mandres";
-        $baseUrl = "";
+        $baseUrl = "/";
         $style = "main.css";
         $script = "script.js";
         ?><script src="<?= $baseUrl ?>public/js/script.js"></script><?php
         include "view/frontend/menu.php";        
         switch ($firsturl =  is_array($url) ? $url[0] : "") {
             case 'SculpturesEtMoulages':
-                $style = "/sculptureEtMoulage/main.css";
+                $style = "sculptureEtMoulage/main.css";
                 include "controller/sculptureEtMoulage.php";
                 break;     
             case "L'atelier":
