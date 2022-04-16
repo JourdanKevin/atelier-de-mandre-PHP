@@ -1,0 +1,28 @@
+@import '../main';
+
+.title{
+    padding-top: 0.3vw;
+    width: 100%;
+    background-color: #D7D2CC;
+    }
+  
+    /* -------------------------------------------------------------------------- IMAGE ---------------------------------------------------------------------------------- */
+    .photo {
+      cursor: pointer;
+      width: 100%;
+  
+    }
+    .borderRight{
+      border-right: 1px solid white ;
+    }
+    .listeImg{
+      width: 100%;
+      border-collapse: collapse;
+    }
+  
+    .listeImg td{
+      border-bottom: 1px solid white;
+      padding: 0px;
+    }
+
+

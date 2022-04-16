@@ -1,0 +1,250 @@
+$font1 : 'Segoe UI';
+$font3 : 'Modern No. 20';
+// General
+body{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}  
+::-webkit-scrollbar-track {
+    background: #eee8e1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #d7d2cc ;
+    &:hover{
+        background: #555; 
+    } 
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    image-rendering: -webkit-optimize-contrast;
+}
+// BANIERE
+.header{
+    display: flex;
+    text-align: center;
+    .ban{
+        width: 58%;
+    }
+    .banWritte {
+        flex-grow: 1;
+        .collection{
+            font-family: $font3;
+            font-size: 3.8vw;
+            color : rgb(226, 226, 226);
+            margin : 3% 0% 0% -9%;
+        }
+        .Catalogue{
+            font-size: 2.7vw;
+            font-weight: 100;
+            font-family: $font1;
+            margin: -8.1% 0px 0px 14%;
+        }
+    }
+    .lien{
+        display: flex;
+        margin: 5% 0.3% 0% 0%;
+        justify-content: end;
+        a{
+            font-size: 1vw;
+            margin: -2.5%;
+            .fa, .far, .fas{
+                color : rgb(94, 92, 92); 
+            }
+            .far{
+                -webkit-text-stroke: 0.15vw white;
+            }
+        }
+    }    
+}
+.lien a:hover .fa,.far{
+    color : black;
+    font-weight: bold;
+}
+.lien a:hover .fas{
+    color : black;
+    font-weight: bold;
+}
+.lien a:hover .far{
+    -webkit-text-stroke: 0.1vw white;
+}
+//MENUE
+.headMenu{
+    background-color: #F8F9FA;
+    ul{
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+        justify-content: center;
+    }
+    li{
+        white-space:nowrap;
+    }
+    a{
+        display: block;
+        text-decoration: none;
+        padding: 0.45vw 1.9vw;
+        font-size: 1.3vw;
+        font-family: $font1;
+        font-weight: lighter;
+        color: rgb(128, 128, 128);
+        cursor: pointer;
+        &:hover{
+            transition: 0.5s;
+            background-color: #DAD8D8;
+            color: rgb(87, 87, 87);
+        }
+    }
+    .active{
+        color: rgb(44, 44, 44);
+        font-weight: bold;
+        background-color: rgb(238, 238, 238);
+    }
+}
+//VerticalMenu
+.contentWithVMenu{
+    display: flex;    
+    .divCompVertMenu{
+        width: 18%;
+        text-align: center;
+        font-family: $font1;
+        p{
+            font-size: 1.18vw;
+            color : rgb(99, 98, 98);
+            font-weight: bolder;
+            margin-top: 7%;
+        }
+    }  
+    .divVertMenu{
+        text-align: justify;
+        ul{
+            list-style: none;
+            padding-left: 5%;
+        }
+        li{
+            border-bottom: solid 1px #ddd;
+        }
+        a{
+            font-size: 0.95vw;
+            color : rgb(29, 29, 29);
+            display: block;
+            padding: 5% 0% 3% 1%;
+            text-decoration: none;
+            &::before{
+                content: "\0025EF";
+                font-size: 1vw;
+                margin-right: 2%;   
+            }
+            &:hover{
+                transition: 0.5s;
+                background-color: rgb(209, 209, 209) ;
+                font-weight: bolder;
+                margin-left: 4%;
+            }
+           
+        }
+        .active{
+            &::before{
+                content: "\002B24";
+            }
+            background-color: rgb(209, 209, 209) ;
+            font-weight: bolder;
+            margin-left: 4%;
+        }
+        
+    }    
+    .content{
+        width: 82%;
+    }
+}
+
+.Popup{
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    overflow-y:auto;
+    align-items: stretch;
+  }
+  
+  .divImgPopup{
+    width: 90%;
+    vertical-align: middle;  
+  }
+  .imgPopup{
+    margin: auto;
+  }
+  .formContent {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  }
+
+  .animate {
+    animation: zoom 0.4s
+  }
+  
+  @keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+  }
+
+    
+  button{
+    cursor: pointer;
+
+  }
+  .buttonP{
+    position: fixed;
+    right: 0.5%;
+    top:0.5%;
+  }  
+.Popup i{
+  font-size: 2vw;
+  color: rgb(211, 211, 211);
+  cursor: pointer;
+}
+
+.Popup button{
+  background-color: black;
+}
+
+#next{
+  width: 5%;  
+}
+#prev{
+  width: 5%;
+}
+
+.popupWritte{
+    text-align: center;
+    p{
+        font-family: $font1;
+        font-size: 1vw;
+        color: white;
+        // margin: auto;
+        margin-top: auto;
+    }
+}
