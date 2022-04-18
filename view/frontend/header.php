@@ -10,7 +10,7 @@
     </div> 
   </div>   
   <div class="ban">
-    <img src="<?= $baseUrl ?>public/images/personal5.jpg" alt="">        
+  <a href="<?= $baseUrl ?>"><img src="<?= $baseUrl ?>public/images/personal5.jpg" alt=""></a>     
   </div>
   <div class="banWritte">
     <p class="collection">collection</p> 

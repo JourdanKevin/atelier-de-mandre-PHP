@@ -119,7 +119,7 @@ img {
         font-family: $font1;
         p{
             font-size: 1.18vw;
-            color : rgb(99, 98, 98);
+            color : black;
             font-weight: bolder;
             margin-top: 7%;
         }
@@ -141,6 +141,7 @@ img {
             text-decoration: none;
             &::before{
                 content: "\0025EF";
+                font-family: "Arial";
                 font-size: 1vw;
                 margin-right: 2%;   
             }
@@ -156,7 +157,7 @@ img {
             &::before{
                 content: "\002B24";
             }
-            background-color: rgb(209, 209, 209) ;
+            background-color: rgb(238, 238, 238);
             font-weight: bolder;
             margin-left: 4%;
         }

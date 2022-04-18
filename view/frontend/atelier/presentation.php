@@ -2,7 +2,7 @@
 <div class="flex content">
   <div class="takeSpace atelier">
       <div class="center title">
-        <h1><span>L</span>'ATELIER DE <span >S</span>CULPTURE, <span >M</span>OULAGE, <span >D</span>ECOR, <span>L</span>UMINAIRES, <span>V</span>ERNIS ET <span>P</span>ATINES</h1>
+        <h1>L'<span>A</span>TELIER DE <span >S</span>CULPTURE, <span >M</span>OULAGE, <span >D</span>ECOR, <span>L</span>UMINAIRES, <span>V</span>ERNIS ET <span>P</span>ATINES</h1>
       </div>
     <div class="corps"> 
       <div class="flex">
@@ -24,7 +24,7 @@
       <p>Nous créons et réalisons des luminaires sur mesure, de toutes tailles,  de styles anciens, modernes et contemporains, en bronze, acier, plâtre, verre, bois, résines et composites, avec patines personnalisées.</p>
       <p>Il s’agit d’appliques, candélabres et torchères, lampadaires, lampes, liseuses, lustres, plafonniers, suspensions, vasques,  torches, lanternes, spots, abat-jours, bougeoirs, bobèches…</p>
       <p>Nous réalisons l’électrification complète de tous les luminaires que nous fabriquons.</p>
-      <h1><span>L</span>'ATELIER DE <span>M</span>ANDRES, <span>M</span>ÉTIERS D’ART</h1>
+      <h1>L'<span>A</span>TELIER DE <span>M</span>ANDRES, <span>M</span>ÉTIERS D’ART</h1>
       <p>Pour compléter et enrichir ses propres créations, l’Atelier associe des Artisans des Métiers d’Art, sculpteurs, mouleurs, ferronniers, staffeurs, peintres, doreurs, vernisseurs, laqueurs, ébénistes, unissant les arts plastiques traditionnels aux techniques de fabrications les plus performantes, mettant en œuvre les matériaux de jadis et d'aujourd'hui dans les règles de l'art, toujours dans le respect des formes, des styles et traditions.</p>  
     </div>
     <div class="video">

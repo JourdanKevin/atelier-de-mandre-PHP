@@ -18,7 +18,11 @@
             case "L'atelier":
                 $style = "atelier/main.css";
                 include "controller/atelier.php";
-                break;          
+                break;  
+            case "ObjetsetDecors":
+                $style = "sculptureEtMoulage/main.css";
+                include "controller/ObjetsetDecors.php";
+                break;         
             default:
                 include "controller/accueil.php";
                 break;

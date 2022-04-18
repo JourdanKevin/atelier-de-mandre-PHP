@@ -1,3 +1,3 @@
-<?php ob_start();?>
-<div class="content"><img  src="<?= $baseUrl ?>public/images/Photo_page_daccueil.jpg" alt=""></div>
-<?php $div = ob_get_clean(); ?>  
+<?php ob_start(); ?>
+<?php include "view/frontend/imageAccueil.php"; ?>
+<?php $div = ob_get_clean(); ?>

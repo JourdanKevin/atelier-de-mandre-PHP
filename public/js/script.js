@@ -29,3 +29,19 @@ function setArrayImg(arr){
 }
 
 
+function startChangeImageAccueil(){
+    var imageAccueil = {
+        index : 0,
+        0 : "Photo_page_daccueil.jpg",
+        1 : "Image2BleuAccueil.png",
+    }
+    setInterval(() => {
+        id = document.getElementById("imageAccueil")
+        url = id.src.split("/")
+        imageAccueil["index"] = imageAccueil["index"] == 0 ? 1 : 0
+        url[url.length - 1] = imageAccueil[imageAccueil["index"]]
+        id.src = url.join("/")
+    }, 5000);
+}
+
+

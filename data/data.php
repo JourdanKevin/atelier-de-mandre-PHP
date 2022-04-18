@@ -6,9 +6,9 @@ class Datas{
         "L'atelier" => ["L'Atelier"],
         "LesCollections" => ["Les Collections"],
         "LesStyles" => ["Les Styles"],
-        "SculpturesEtMoulages" => ["Sculpture Et Moulage"],
+        "SculpturesEtMoulages" => ["Sculpture et Moulage"],
         "Luminaires" => ["Luminaires"],
-        "ObjetsetDecors" => ["Objets Et décors"],
+        "ObjetsetDecors" => ["Objets et Décors"],
         "ClientsRealisations" => ["Clients-Réalisations"],
         "Boutique" => ["Boutique"],
         "Contact" => ["Contact"]

@@ -156,7 +156,7 @@ img {
 
 .contentWithVMenu .divCompVertMenu p {
   font-size: 1.18vw;
-  color: #636262;
+  color: black;
   font-weight: bolder;
   margin-top: 7%;
 }
@@ -184,6 +184,7 @@ img {
 
 .contentWithVMenu .divVertMenu a::before {
   content: "\0025EF";
+  font-family: "Arial";
   font-size: 1vw;
   margin-right: 2%;
 }
@@ -197,7 +198,7 @@ img {
 }
 
 .contentWithVMenu .divVertMenu .active {
-  background-color: #d1d1d1;
+  background-color: #eeeeee;
   font-weight: bolder;
   margin-left: 4%;
 }
