@@ -1,5 +1,4 @@
 <?php ob_start(); ?>
-<div class="flex content">
   <div class="takeSpace atelier">
       <div class="center title">
         <h1>L'<span>A</span>TELIER DE <span >S</span>CULPTURE, <span >M</span>OULAGE, <span >D</span>ECOR, <span>L</span>UMINAIRES, <span>V</span>ERNIS ET <span>P</span>ATINES</h1>
@@ -27,10 +26,6 @@
       <h1>L'<span>A</span>TELIER DE <span>M</span>ANDRES, <span>M</span>ÉTIERS D’ART</h1>
       <p>Pour compléter et enrichir ses propres créations, l’Atelier associe des Artisans des Métiers d’Art, sculpteurs, mouleurs, ferronniers, staffeurs, peintres, doreurs, vernisseurs, laqueurs, ébénistes, unissant les arts plastiques traditionnels aux techniques de fabrications les plus performantes, mettant en œuvre les matériaux de jadis et d'aujourd'hui dans les règles de l'art, toujours dans le respect des formes, des styles et traditions.</p>  
     </div>
-    <div class="video">
-      <video controls><source src="public/video/Reportage Atelier de Mandres - La Rue.mp4" type="video/mp4">Sorry, your browser doesn't support embedded videos.</video>
-    <div>
   </div>
-</div>
 </div>
 <?php $div = ob_get_clean(); ?>  

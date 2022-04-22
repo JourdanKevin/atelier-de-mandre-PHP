@@ -1,4 +1,4 @@
-@import '../main';
+// @import '../main';
 
 h1{
     font-weight: bold;
@@ -13,7 +13,7 @@ h1{
     font-size: 1.5vw;  
   }
   
-  .title{
+  .atelier .title{
     width: 100%;
     margin-bottom: 5%;
   }
@@ -43,7 +43,7 @@ h1{
   .video{
     display: block;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 7%;
   }
   
   .divImage img  {
@@ -66,3 +66,4 @@ h1{
   .flex{
     display: flex;
   }
+

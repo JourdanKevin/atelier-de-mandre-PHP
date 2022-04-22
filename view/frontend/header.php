@@ -26,21 +26,25 @@
     <a href="https://www.linkedin.com/in/pierre-wagner-432894b2/" target="_blank">
       <span class="fa-stack fa-lg">
         <i class="far fa-circle fa-stack-2x"></i>
-        <i class="fa fa-linkedin fa-stack-1x"></i>
+        <i class="fa fa-brands fa-linkedin-in fa-stack-1x"></i>
       </span> 
     </a>
     <a href="https://instagram.com/atelierdemandres?utm_medium=copy_link" target="_blank">
       <span class="fa-stack fa-lg">
         <i class="far fa-circle fa-stack-2x"></i>
-        <i class="fa fa-instagram fa-stack-1x"></i>
+        <i class="fa fa-brands fa-instagram fa-stack-1x"></i>
       </span> 
     </a>
     <a href="" target="_blank">
       <span class="fa-stack fa-lg">
         <i class="far fa-circle fa-stack-2x"></i>
-        <i class="fa fa-facebook fa-stack-1x"></i>
+        <i class="fa fa-brands fa-facebook-f fa-stack-1x"></i>
       </span> 
     </a>
   </div>
 </div>
-<?php menu("headMenu",$tMenu,$baseUrl); ?>
+<div id="targetMenueHorizontal">
+  <div id="menueHorizontal">
+    <?php menu("headMenu",$tMenu,$baseUrl,"H"); ?>
+  </div>
+</div>

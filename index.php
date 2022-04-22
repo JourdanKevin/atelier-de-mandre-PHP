@@ -3,24 +3,26 @@
     include "data/data.php";    
     $data = new Datas();    
     $tMenu =  $data->get_header_menue($url ? $url[0] : false);
+    
     if ($tMenu) {
         $title = "L'Atelier de Mandres";
         $baseUrl = "/";
         $style = "main.css";
         $script = "script.js";
+        ?><script src="<?= $baseUrl ?>public/js/jquery-3.6.0.min.js"></script><?php
         ?><script src="<?= $baseUrl ?>public/js/script.js"></script><?php
         include "view/frontend/menu.php";        
         switch ($firsturl =  is_array($url) ? $url[0] : "") {
             case 'SculpturesEtMoulages':
-                $style = "sculptureEtMoulage/main.css";
+                // $style = "sculptureEtMoulage/main.css";
                 include "controller/sculptureEtMoulage.php";
                 break;     
             case "L'atelier":
-                $style = "atelier/main.css";
+                // $style = "atelier/main.css";
                 include "controller/atelier.php";
                 break;  
             case "ObjetsetDecors":
-                $style = "sculptureEtMoulage/main.css";
+                // $style = "sculptureEtMoulage/main.css";
                 include "controller/ObjetsetDecors.php";
                 break;         
             default:

@@ -1,9 +1,13 @@
 $font1 : 'Segoe UI';
 $font3 : 'Modern No. 20';
+
+@import './sculptureEtMoulage/main';
+@import './atelier/main';
 // General
 body{
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
 }
 a{
     cursor: pointer;
@@ -31,8 +35,9 @@ img {
 .header{
     display: flex;
     text-align: center;
+    // height: 15.3vh ;
     .ban{
-        width: 58%;
+        width: 58%;        
     }
     .banWritte {
         flex-grow: 1;
@@ -117,6 +122,11 @@ img {
         width: 18%;
         text-align: center;
         font-family: $font1;
+        overflow-y: scroll;
+        height: 79.59vh;
+        &::-webkit-scrollbar{
+            display: none;
+        }
         p{
             font-size: 1.18vw;
             color : black;
@@ -140,22 +150,30 @@ img {
             padding: 5% 0% 3% 1%;
             text-decoration: none;
             &::before{
-                content: "\0025EF";
-                font-family: "Arial";
+                font-family: "Font Awesome 5 Free";
+                content: "\f111";
+                font-weight: 400;                
                 font-size: 1vw;
-                margin-right: 2%;   
+                margin-right: 2%;
+                -webkit-text-stroke-width: 0.02vw;
+                -webkit-text-stroke-color: white;   
             }
             &:hover{
                 transition: 0.5s;
                 background-color: rgb(209, 209, 209) ;
+                   
                 font-weight: bolder;
                 margin-left: 4%;
+                &::before{
+                    -webkit-text-stroke-color: rgb(209, 209, 209);
+                }
             }
            
         }
         .active{
             &::before{
-                content: "\002B24";
+                font-weight: bolder;
+                -webkit-text-stroke-color: rgb(238, 238, 238);
             }
             background-color: rgb(238, 238, 238);
             font-weight: bolder;
@@ -165,6 +183,9 @@ img {
     }    
     .content{
         width: 82%;
+        overflow-y: scroll;
+        max-height: 79.59vh;
+        
     }
 }
 
@@ -219,8 +240,14 @@ img {
   }
   .buttonP{
     position: fixed;
-    right: 0.5%;
-    top:0.5%;
+    right: 0.8%;
+    top:0.8%;
+    
+    -webkit-text-stroke-width: 0.11vw;
+    -webkit-text-stroke-color: black;  
+    i::before{
+        font-size: 1.5vw;
+    }
   }  
 .Popup i{
   font-size: 2vw;
@@ -233,10 +260,14 @@ img {
 }
 
 #next{
-  width: 5%;  
+  width: 5%;
+  -webkit-text-stroke-width: 0.11vw;
+  -webkit-text-stroke-color: black;  
 }
 #prev{
   width: 5%;
+  -webkit-text-stroke-width: 0.11vw;
+  -webkit-text-stroke-color: black;
 }
 
 .popupWritte{
@@ -249,3 +280,25 @@ img {
         margin-top: auto;
     }
 }
+
+@keyframes animationFadeIn{
+    0%{opacity: 0;}
+    100% {opacity: 1;}
+  }
+.fadeIn{
+    animation: animationFadeIn 0.75s forwards;
+}
+
+
+@keyframes animationFadeOut{
+    0%{opacity: 1;}
+    100% {opacity: 0;}
+  }
+.fadeOut{
+  animation: animationFadeOut 0.75s forwards;
+}
+
+
+
+
+

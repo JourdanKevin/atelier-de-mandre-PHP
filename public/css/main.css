@@ -1,6 +1,111 @@
+.scluptMoulage {
+  padding-top: 0.3vw;
+  width: 100%;
+  background-color: #D7D2CC;
+}
+
+/* -------------------------------------------------------------------------- IMAGE ---------------------------------------------------------------------------------- */
+.photo {
+  cursor: pointer;
+  width: 100%;
+}
+
+.borderRight {
+  border-right: 1px solid white;
+}
+
+.listeImg {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.listeImg td {
+  border-bottom: 1px solid white;
+  padding: 0px;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.atelier {
+  font-family: 'Goudy Old Style';
+  text-align: center;
+}
+
+.atelier h1, p {
+  font-size: 1.5vw;
+}
+
+.atelier .title {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.title h1 {
+  font-size: 1.8vw;
+  background-color: #D7D2CC;
+  width: 90%;
+  margin: auto;
+  padding: 0.5%;
+  font-weight: normal;
+}
+
+.title span {
+  font-size: 2.5vw;
+}
+
+.divImage {
+  width: 17%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.logoAtelier {
+  vertical-align: auto;
+  display: table-cell;
+  margin: auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.video {
+  display: block;
+  text-align: center;
+  margin-top: 7%;
+}
+
+.divImage img {
+  width: 100%;
+  margin: auto;
+}
+
+.corps {
+  text-align: justify;
+  width: 80%;
+  margin: auto;
+}
+
+.corps span {
+  font-size: 2.6vw;
+  font-weight: normal;
+}
+
+.atelierImg {
+  width: 100%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 body {
   margin: 0px;
   padding: 0px;
+  overflow: hidden;
 }
 
 a {
@@ -152,6 +257,12 @@ img {
   width: 18%;
   text-align: center;
   font-family: "Segoe UI";
+  overflow-y: scroll;
+  height: 79.59vh;
+}
+
+.contentWithVMenu .divCompVertMenu::-webkit-scrollbar {
+  display: none;
 }
 
 .contentWithVMenu .divCompVertMenu p {
@@ -183,10 +294,13 @@ img {
 }
 
 .contentWithVMenu .divVertMenu a::before {
-  content: "\0025EF";
-  font-family: "Arial";
+  font-family: "Font Awesome 5 Free";
+  content: "\f111";
+  font-weight: 400;
   font-size: 1vw;
   margin-right: 2%;
+  -webkit-text-stroke-width: 0.02vw;
+  -webkit-text-stroke-color: white;
 }
 
 .contentWithVMenu .divVertMenu a:hover {
@@ -197,6 +311,10 @@ img {
   margin-left: 4%;
 }
 
+.contentWithVMenu .divVertMenu a:hover::before {
+  -webkit-text-stroke-color: #d1d1d1;
+}
+
 .contentWithVMenu .divVertMenu .active {
   background-color: #eeeeee;
   font-weight: bolder;
@@ -204,11 +322,14 @@ img {
 }
 
 .contentWithVMenu .divVertMenu .active::before {
-  content: "\002B24";
+  font-weight: bolder;
+  -webkit-text-stroke-color: #eeeeee;
 }
 
 .contentWithVMenu .content {
   width: 82%;
+  overflow-y: scroll;
+  max-height: 79.59vh;
 }
 
 .Popup {
@@ -288,8 +409,14 @@ button {
 
 .buttonP {
   position: fixed;
-  right: 0.5%;
-  top: 0.5%;
+  right: 0.8%;
+  top: 0.8%;
+  -webkit-text-stroke-width: 0.11vw;
+  -webkit-text-stroke-color: black;
+}
+
+.buttonP i::before {
+  font-size: 1.5vw;
 }
 
 .Popup i {
@@ -304,10 +431,14 @@ button {
 
 #next {
   width: 5%;
+  -webkit-text-stroke-width: 0.11vw;
+  -webkit-text-stroke-color: black;
 }
 
 #prev {
   width: 5%;
+  -webkit-text-stroke-width: 0.11vw;
+  -webkit-text-stroke-color: black;
 }
 
 .popupWritte {
@@ -319,5 +450,51 @@ button {
   font-size: 1vw;
   color: white;
   margin-top: auto;
+}
+
+@-webkit-keyframes animationFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animationFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation: animationFadeIn 0.75s forwards;
+          animation: animationFadeIn 0.75s forwards;
+}
+
+@-webkit-keyframes animationFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animationFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  -webkit-animation: animationFadeOut 0.75s forwards;
+          animation: animationFadeOut 0.75s forwards;
 }
 /*# sourceMappingURL=main.css.map */

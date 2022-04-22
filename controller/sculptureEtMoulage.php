@@ -3,10 +3,15 @@
     $vTitle = "Sculptures et Moulages : ";
     if ($secondurl) {
         include "model/sculptureEtMoulage.php";
-        $vTitle = $vMenu[$secondurl][0]; 
+        $vTitle = $vMenu[$secondurl]["value"]; 
+        // if ($secondurl == "Statues"){
+        //     include "view/frontend/sculptureEtMoulage/test.php";
+        // }
+        // else{
         $images = query($db,$IMAGES);
-        ?><script>setArrayImg(<?php echo json_encode($images) ?>)</script> <?php
+        
         include "view/frontend/sculptureEtMoulage/schema1.php";
+        // }
      
     }else{
         include "view/frontend/sculptureEtMoulage/imageAccueil.php";

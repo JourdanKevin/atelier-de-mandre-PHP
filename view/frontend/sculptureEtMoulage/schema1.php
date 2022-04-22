@@ -1,7 +1,7 @@
 <?php ob_start(); ?>
-<div class="content">
+<script id="setArrImg">setArrayImg(<?php echo json_encode($images) ?>)</script>
     <div class="block takeSpace">
-        <div class="title">
+        <div class="title scluptMoulage">
             <img class="takeSpace" src="<?= $baseUrl ?>public/images/titre.png">
         </div>
         <div>
@@ -46,5 +46,4 @@
             </table>
         </div>
     </div>
-</div>
 <?php $div = ob_get_clean(); ?>
