@@ -6,7 +6,7 @@
     
     if ($tMenu) {
         $title = "L'Atelier de Mandres";
-        $baseUrl = "/AtelierDeMandres/";
+        $baseUrl = "/";
         $style = "main.css";
         $script = "script.js";
         include "view/frontend/meta.php";
