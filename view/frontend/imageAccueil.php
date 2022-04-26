@@ -1,2 +1,2 @@
-<img id="imageAccueil" src="<?= $baseUrl ?>public/images/Photo_page_daccueil.jpg" alt="">
+<img id="imageAccueil" src="<?= $baseUrl ?>public/images/Photo page d'accueil.jpg" alt="">
 <script>startChangeImageAccueil()</script>

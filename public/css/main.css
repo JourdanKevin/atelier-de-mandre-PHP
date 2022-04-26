@@ -143,7 +143,7 @@ img {
 }
 
 .header .ban {
-  width: 58%;
+  width: 38.5%;
 }
 
 .header .banWritte {
@@ -156,14 +156,14 @@ img {
   font-family: "Modern No. 20";
   font-size: 3.8vw;
   color: #e2e2e2;
-  margin: 3% 0% 0% -9%;
+  margin: 2.5% 0% 0% 30%;
 }
 
 .header .banWritte .Catalogue {
   font-size: 2.7vw;
   font-weight: 100;
   font-family: "Segoe UI";
-  margin: -8.1% 0px 0px 14%;
+  margin: -5.1% 0px 0px 44%;
 }
 
 .header .lien {
@@ -267,6 +267,7 @@ img {
 
 .contentWithVMenu .divCompVertMenu .subtilte {
   background: white;
+  margin-top: 1%;
   padding: 5%;
   position: -webkit-sticky;
   position: sticky;

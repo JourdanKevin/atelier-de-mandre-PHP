@@ -31,8 +31,8 @@ var intervalImage = ""
 function startChangeImageAccueil(){
     var imageAccueil = {
         index : 0,
-        0 : "Photo_page_daccueil.jpg",
-        1 : "Image2BleuAccueil.png",
+        0 : "Photo page d'accueil.jpg",
+        1 : "Photo Victoire Ailée.jpg",
     }
     intervalImage = setInterval(() => {
         id = document.getElementById("imageAccueil")
