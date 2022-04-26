@@ -3,7 +3,7 @@
     $vTitle = "Sculptures et Moulages : ";
     if ($secondurl) {
         include "model/sculptureEtMoulage.php";
-        $vTitle = $vMenu[$secondurl]["value"]; 
+        // $vTitle = $vMenu[$secondurl]["value"]; 
         // if ($secondurl == "Statues"){
         //     include "view/frontend/sculptureEtMoulage/test.php";
         // }

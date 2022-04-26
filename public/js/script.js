@@ -84,8 +84,9 @@ $(document).on('click', 'a.nav-linkV', function(e){
         success: function(response){
             
             var wrapper = $("<div>").append(response)
+            console.log(wrapper.find("script")[2])
             $('#targetContent').html(wrapper.find("#content"))
-            // $('#targetContent').append(wrapper.find("script")[2])
+            $('#targetContent').append(wrapper.find("script")[2])
             $('#'+activeURL+'V').addClass("active")
             $("#vMenue").children("p").text(wrapper.find("#vMenue").children("p").text())     
         }    

@@ -6,7 +6,6 @@ if ($secondurl) {
 }
 include "model/sculptureEtMoulage.php";
 $images = query($db,$IMAGES);
-?><script>setArrayImg(<?php echo json_encode($images) ?>)</script> <?php
 include "view/frontend/sculptureEtMoulage/schema1.php";
 include "view/frontend/vMenuWithContent.php";
 ?>

@@ -1,8 +1,8 @@
 <?php
     $vMenu =  $data->get_vertical_menue_atelier($secondurl =  count($url) > 1 ? $url[1] : "");
-    $vTitle = "Présentation";    
+    $vTitle = "L'Atelier";    
     if ($secondurl) {
-        $vTitle = $vMenu[$secondurl]["value"]; 
+        // $vTitle = $vMenu[$secondurl]["value"]; 
         if ($secondurl == "Video"){
             include "view/frontend/atelier/video.php";
         }

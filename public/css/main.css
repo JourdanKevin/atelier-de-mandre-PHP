@@ -255,7 +255,7 @@ img {
 
 .contentWithVMenu .divCompVertMenu {
   width: 18%;
-  text-align: center;
+  text-align: left;
   font-family: "Segoe UI";
   overflow-y: scroll;
   height: 79.59vh;
@@ -263,6 +263,14 @@ img {
 
 .contentWithVMenu .divCompVertMenu::-webkit-scrollbar {
   display: none;
+}
+
+.contentWithVMenu .divCompVertMenu .subtilte {
+  background: white;
+  padding: 5%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
 }
 
 .contentWithVMenu .divCompVertMenu p {

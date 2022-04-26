@@ -120,18 +120,26 @@ img {
     display: flex;    
     .divCompVertMenu{
         width: 18%;
-        text-align: center;
+        text-align: left;
         font-family: $font1;
         overflow-y: scroll;
         height: 79.59vh;
         &::-webkit-scrollbar{
             display: none;
         }
+        .subtilte {
+            background: white;
+            padding: 5%;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0px;
+         }
         p{
             font-size: 1.18vw;
             color : black;
             font-weight: bolder;
             margin-top: 7%;
+            // margin-left: 3%;
         }
     }  
     .divVertMenu{

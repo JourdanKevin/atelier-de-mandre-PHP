@@ -7,7 +7,6 @@
     <title><?= $title ?></title>
     <link href="<?= $baseUrl ?>public/css/<?= $style ?>" rel="stylesheet" />
     <link rel="stylesheet" href="<?= $baseUrl ?>public/css/fontAwesome/all.css">
-    <!-- <script src="https://kit.fontawesome.com/58054f5d7c.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
     <header>
