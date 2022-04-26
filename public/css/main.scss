@@ -294,7 +294,7 @@ img {
     100% {opacity: 1;}
   }
 .fadeIn{
-    animation: animationFadeIn 0.75s forwards;
+    animation: animationFadeIn 1s forwards;
 }
 
 
@@ -303,7 +303,7 @@ img {
     100% {opacity: 0;}
   }
 .fadeOut{
-  animation: animationFadeOut 0.75s forwards;
+  animation: animationFadeOut 1s forwards;
 }
 
 

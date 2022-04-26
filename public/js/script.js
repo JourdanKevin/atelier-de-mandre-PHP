@@ -1,9 +1,9 @@
 var lImages = []
-var location= "" // /AtelierDeMandres
+var location= "/AtelierDeMandres"
 function changeImage(index){
     index = index < 0 ? lImages.length -1 : index > lImages.length -1 ? 0 : index
     document.getElementById("writteIndex").textContent = parseInt(index) + parseInt(1);
-    document.getElementById("idImgPopup").src = location+"/public/" + lImages[index]["folder"] + lImages[index]["nomFichierAssoc"] ;
+    document.getElementById("idImgPopup").src = "/public/" + lImages[index]["folder"] + lImages[index]["nomFichierAssoc"] ;
     document.getElementById("prev").onclick = function () {changeImage(parseInt(index) - 1)}
     document.getElementById("next").onclick = function() {changeImage(parseInt(index) + 1)}
 }
@@ -48,7 +48,7 @@ function startChangeImageAccueil(){
             id.removeEventListener("animationend", animationEvent);
         }
        
-    }, 5000);
+    }, 10000);
 }
 
 var hActive = ""

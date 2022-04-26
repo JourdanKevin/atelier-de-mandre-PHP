@@ -479,8 +479,8 @@ button {
 }
 
 .fadeIn {
-  -webkit-animation: animationFadeIn 0.75s forwards;
-          animation: animationFadeIn 0.75s forwards;
+  -webkit-animation: animationFadeIn 1s forwards;
+          animation: animationFadeIn 1s forwards;
 }
 
 @-webkit-keyframes animationFadeOut {
@@ -502,7 +502,7 @@ button {
 }
 
 .fadeOut {
-  -webkit-animation: animationFadeOut 0.75s forwards;
-          animation: animationFadeOut 0.75s forwards;
+  -webkit-animation: animationFadeOut 1s forwards;
+          animation: animationFadeOut 1s forwards;
 }
 /*# sourceMappingURL=main.css.map */

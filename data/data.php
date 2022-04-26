@@ -6,10 +6,10 @@ class Datas{
         "L'atelier" => ["value" => "L'Atelier", "active" => false],
         "LesCollections" => ["value" => "Les Collections", "active" => false],
         "LesStyles" => ["value" => "Les Styles", "active" => false],
-        "SculpturesEtMoulages" => ["value" => "Sculpture et Moulage", "active" => false],
+        "SculpturesEtMoulages" => ["value" => "Sculptures et Moulages", "active" => false],
         "Luminaires" => ["value" => "Luminaires", "active" => false],
         "ObjetsetDecors" => ["value" => "Objets et Décors", "active" => false],
-        "ClientsRealisations" => ["value" => "Clients-Réalisations", "active" => false],
+        "ClientsRealisations" => ["value" => "Clients et Réalisations", "active" => false],
         "Boutique" => ["value" => "Boutique", "active" => false],
         "Contact" => ["value" => "Contact", "active" => false],
     );
@@ -55,7 +55,7 @@ class Datas{
     private $vertical_menue_atelier = array(
         "HistoriquesDesAteliers" => ["value" => "Historiques des Ateliers", "active" => false],
         "Contact" => ["value" => "Contact", "active" => false],
-        "Video" => ["value" => "Video", "active" => false],
+        "Video" => ["value" => "Vidéos", "active" => false],
       );
 
     function get_header_menue($val = false){
