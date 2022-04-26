@@ -1,5 +1,4 @@
 var lImages = []
-var location= "/AtelierDeMandres"
 function changeImage(index){
     index = index < 0 ? lImages.length -1 : index > lImages.length -1 ? 0 : index
     document.getElementById("writteIndex").textContent = parseInt(index) + parseInt(1);
