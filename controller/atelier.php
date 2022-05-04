@@ -1,5 +1,5 @@
 <?php
-    $vMenu =  $data->get_vertical_menue_atelier($secondurl =  count($url) > 1 ? $url[1] : "");
+    $vMenu =  $data->get_vertical_menue_atelier($secondurl =  count($url) > 1 ? $url[1] : "Depuis1988");
     $vTitle = "L'Atelier";    
     if ($secondurl) {
         // $vTitle = $vMenu[$secondurl]["value"]; 

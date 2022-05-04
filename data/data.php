@@ -53,9 +53,10 @@ class Datas{
       );
 
     private $vertical_menue_atelier = array(
+        "Depuis1988" => ["value" => "Depuis 1988", "active" => false],
         "HistoriquesDesAteliers" => ["value" => "Historiques des Ateliers", "active" => false],
-        "Contact" => ["value" => "Contact", "active" => false],
         "Video" => ["value" => "Vidéos", "active" => false],
+        "Contact" => ["value" => "Contact", "active" => false],        
       );
 
     function get_header_menue($val = false){
