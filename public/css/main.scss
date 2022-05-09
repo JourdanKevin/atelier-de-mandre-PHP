@@ -137,7 +137,7 @@ img {
          }
         p{
             font-size: 1.18vw;
-            color : black;
+            color : #D7D2CC;
             font-weight: bolder;
             margin-top: 7%;
             // margin-left: 3%;
@@ -295,7 +295,7 @@ img {
     100% {opacity: 1;}
   }
 .fadeIn{
-    animation: animationFadeIn 1s forwards;
+    animation: animationFadeIn 2.5s forwards;
 }
 
 
@@ -304,7 +304,7 @@ img {
     100% {opacity: 0;}
   }
 .fadeOut{
-  animation: animationFadeOut 1s forwards;
+  animation: animationFadeOut 2.5s forwards;
 }
 
 

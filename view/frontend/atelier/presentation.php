@@ -6,7 +6,7 @@
     <div class="corps"> 
       <div class="flex">
         <div class="divImage">
-          <img src="<?= $baseUrl ?>public/images/accueilCoreImage.png" alt="">
+          <img src="<?= $baseUrl ?>public/images/statuettesAtelier.png" alt="">
         </div>
         <div class="atelierImg">
           <h1><span>D</span>EPUIS 1988</h1>
