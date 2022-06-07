@@ -23,6 +23,7 @@
             <table class="listeImg">
                 <?php
                     $compteur = 0;
+                    $compteur2 = 0;
                     $compteur3= 0;
                     foreach ($images as $index => $image){
                         // $url = $baseUrl."public/".$image["folder"];
@@ -38,14 +39,14 @@
                         }
                 ?>
                 <td class="articles  <?php echo $borderRight ?>">
-                    <img src="<?php echo $baseUrl."public/".$image["folder"].$image["nomFichier"]?>" class="photo" onclick=showPopup(<?php echo "'idPopup','".$index."'" ?>)>
+                    <img <?= "id=image".$compteur2++ ?>  src="<?php echo $baseUrl."public/".$image["folder"].$image["nomFichier"]?>" class="photo" onclick=showPopup(<?php echo "'idPopup','".$index."'" ?>)>
                 </td>
                 <?php
                         $compteur++;        
                     } 
                 ?>
             </table>
-            <script>randomRow(<?= $compteur3-1 ?>)</script>
+            <script defer>randomRow(<?= $compteur3-1 ?>,<?= "image".($compteur2-1) ?>)</script>
         </div>
     </div>
 <?php $div = ob_get_clean(); ?>
