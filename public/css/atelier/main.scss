@@ -34,6 +34,7 @@ h1{
     display: table-cell;
     vertical-align: middle;
     margin-right: 1%;
+    
   }
   .logoAtelier{
     vertical-align: auto;
@@ -50,19 +51,28 @@ h1{
   .divImage img  {
     width: 100%;
     margin: auto;
+    margin-top: 31%;
   }
   .corps{
     text-align: justify;
     width: 80%;
     margin: auto  ;
+    font-family: "Segoe UI";
+    font-weight: lighter;
+    h1{
+      font-weight: normal!important;
+    }
   }
   .corps span{
     font-size: 2.6vw;
-    font-weight: normal;
+    font-weight: lighter;
   }
   
   .atelierImg{
     width: 100%;
+
+    
+
   }
   .flex{
     display: flex;

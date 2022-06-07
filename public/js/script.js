@@ -17,6 +17,24 @@ function showPopup(id,index = false){
     document.getElementById(id).style.display = "flex";
 }
 
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
+
+
+function randomRow(max){
+    ele = document.getElementById('row'+getRandomInt(max));
+    document.querySelector(".content").scrollTop = ele.offsetTop; 
+    setTimeout(()=>{
+        document.querySelector(".content").addEventListener('scroll', ()=>{
+            document.querySelector(".scluptMoulage").classList.remove("sticky");
+        })
+    },100);
+    
+}
+
+
+
 function Close(id,index = false){
     if (index == "video"){
         document.getElementById("video").pause()

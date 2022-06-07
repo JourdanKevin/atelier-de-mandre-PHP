@@ -55,10 +55,18 @@ class Datas{
 
     private $vertical_menue_atelier = array(
         "Depuis1988" => ["value" => "Depuis 1988", "active" => false],
-        "HistoriquesDesAteliers" => ["value" => "Historiques des Ateliers", "active" => false],
-        "Savoir-Faire" => ["value" => "Savoir-Faire", "active" => false],
-        "RevuesDePresse" => ["value" => "Revues de Presse", "active" => false],
-        "Video" => ["value" => "Vidéos", "active" => false],
+        "NosAteliersAutrefois" => ["value" => "Nos Ateliers Autrefois", "active" => false],
+        "VideosDanslAtelierDeMandres" => ["value" => "Vidéos dans l'Atelier de Mandres", "active" => false],
+        "CeQueNousFabriquons" => ["value" => "Ce que nous fabriquons", "active" => false],
+        "NosPartenaires" => ["value" => "Nos Partenaires", "active" => false],
+        "LAtelierDeMandresDansLeMonde" => ["value" => "L'Atelier de Mandres dans le Monde", "active" => false],
+        "RevueDePresse" => ["value" => "Revue de Presse", "active" => false],
+        "DanslAtelier" => ["value" => "Dans l'Atelier", "active" => false],
+        "SavoirFaire" => ["value" => "Savoir Faire", "active" => false],
+        "Patines" => ["value" => "Patines", "active" => false],
+        "MateriauxUtilises" => ["value" => "Matériaux Utilisés", "active" => false],
+        "PierreWagnerSculpteur" => ["value" => "Pierre Wagner Sculpteur - Mouleur - Biographie", "active" => false],
+        "PierreWagnerPeintre" => ["value" => "Pierre Wagner (1897 - 1943) - Biographie", "active" => false],        
         "Contact" => ["value" => "Contact", "active" => false],        
       );
 

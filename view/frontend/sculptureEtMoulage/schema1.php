@@ -1,7 +1,7 @@
 <?php ob_start(); ?>
 <script id="setArrImg">setArrayImg(<?php echo json_encode($images) ?>)</script>
     <div class="block takeSpace">
-        <div class="title scluptMoulage">
+        <div class="title scluptMoulage sticky">
             <img class="takeSpace" src="<?= $baseUrl ?>public/images/titre.png">
         </div>
         <div>
@@ -22,13 +22,14 @@
             </div>
             <table class="listeImg">
                 <?php
-                    $compteur = 1;
+                    $compteur = 0;
+                    $compteur3= 0;
                     foreach ($images as $index => $image){
                         // $url = $baseUrl."public/".$image["folder"];
                         $borderRight = "borderRight";
                         if ($compteur%7 == 0){
                 ?> 
-                <tr> 
+                <tr <?= "id=row".$compteur3++ ?>> 
                 <?php
                         $compteur=1;
                         }
@@ -40,10 +41,11 @@
                     <img src="<?php echo $baseUrl."public/".$image["folder"].$image["nomFichier"]?>" class="photo" onclick=showPopup(<?php echo "'idPopup','".$index."'" ?>)>
                 </td>
                 <?php
-                        $compteur++;            
+                        $compteur++;        
                     } 
                 ?>
             </table>
+            <script>randomRow(<?= $compteur3-1 ?>)</script>
         </div>
     </div>
 <?php $div = ob_get_clean(); ?>

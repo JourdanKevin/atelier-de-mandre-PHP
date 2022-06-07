@@ -24,6 +24,12 @@
   padding: 0px;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
 h1 {
   font-weight: bold;
 }
@@ -80,17 +86,24 @@ h1 {
 .divImage img {
   width: 100%;
   margin: auto;
+  margin-top: 31%;
 }
 
 .corps {
   text-align: justify;
   width: 80%;
   margin: auto;
+  font-family: "Segoe UI";
+  font-weight: lighter;
+}
+
+.corps h1 {
+  font-weight: normal !important;
 }
 
 .corps span {
   font-size: 2.6vw;
-  font-weight: normal;
+  font-weight: lighter;
 }
 
 .atelierImg {
@@ -506,5 +519,10 @@ button {
 .fadeOut {
   -webkit-animation: animationFadeOut 2.5s forwards;
           animation: animationFadeOut 2.5s forwards;
+}
+
+.backimage {
+  background-image: url("../images/Photo_page_daccueil_logo.jpg");
+  background-size: cover;
 }
 /*# sourceMappingURL=main.css.map */

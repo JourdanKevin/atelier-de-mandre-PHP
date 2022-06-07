@@ -23,4 +23,10 @@
   border-bottom: 1px solid white;
   padding: 0px;
 }
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
 /*# sourceMappingURL=main.css.map */
