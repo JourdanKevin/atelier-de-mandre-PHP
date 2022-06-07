@@ -21,16 +21,32 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
   }
 
+function eventScroll(){
+    document.querySelector(".scluptMoulage").classList.remove("sticky");
+}
 
-function randomRow(max){
-    ele = document.getElementById('row'+getRandomInt(max));
-    document.querySelector(".content").scrollTop = ele.offsetTop; 
-    setTimeout(()=>{
-        document.querySelector(".content").addEventListener('scroll', ()=>{
-            document.querySelector(".scluptMoulage").classList.remove("sticky");
-        })
-    },100);
-    
+var ol = true;
+function randomRow(max){   
+    document.querySelector(".scluptMoulage").classList.add("sticky");
+    if (ol){        
+        window.addEventListener("load", function(event) {
+            console.log("test");
+            ele = document.getElementById('row'+getRandomInt(max));
+            document.querySelector(".content").scrollTop = ele.offsetTop; 
+            ol = !ol;
+            setTimeout(()=>{
+                document.querySelector(".content").addEventListener('scroll', eventScroll)
+            },100);
+          });  
+    }else{
+        document.querySelector(".content").removeEventListener("scroll",eventScroll);
+        ele = document.getElementById('row'+getRandomInt(max));
+        document.querySelector(".content").scrollTop = ele.offsetTop; 
+        setTimeout(()=>{
+            document.querySelector(".content").addEventListener('scroll', eventScroll)
+        },100);
+    }
+   
 }
 
 
@@ -90,7 +106,8 @@ $(document).on('click', 'a.nav-linkH', function(e){
 })
 
 
-$(document).on('click', 'a.nav-linkV', function(e){   
+$(document).on('click', 'a.nav-linkV', function(e){  
+    ol=false; 
     var pageURL=$(this).attr('href');
     activeURL = pageURL.split('/')
     activeURL = activeURL[activeURL.length - 1]
@@ -105,7 +122,9 @@ $(document).on('click', 'a.nav-linkV', function(e){
             $('#targetContent').html(wrapper.find("#content"))
             // $('#targetContent').append(wrapper.find("script")[2])
             $('#'+activeURL+'V').addClass("active")
-            $("#vMenue").children("p").text(wrapper.find("#vMenue").children("p").text())     
+            $("#vMenue").children("p").text(wrapper.find("#vMenue").children("p").text()) 
+            
+
         }    
 })
     clearInterval(intervalImage)
